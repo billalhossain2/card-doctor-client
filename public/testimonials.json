@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "testimonial_text": "I was amazed by the quality of their service. They exceeded my expectations in every way.",
+      "author": "John Smith",
+      "position": "CEO, XYZ Company",
+      "image": "https://i.ibb.co/Jz2gZYd/team1.jpg",
+      "quote":"https://i.ibb.co/1JnLqmr/quote.png",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "testimonial_text": "Working with them has been a game-changer for our business. Their expertise and dedication are unmatched.",
+      "author": "Jane Doe",
+      "position": "Marketing Director, ABC Inc.",
+      "image": "https://i.ibb.co/Jz2gZYd/team1.jpg",
+      "quote":"https://i.ibb.co/1JnLqmr/quote.png",
+      "rating": 4.5
+    },
+    {
+      "id": 3,
+      "testimonial_text": "Their service is top-notch. I recommend them to anyone looking for quality and reliability.",
+      "author": "Alice Johnson",
+      "position": "CFO, Acme Corp",
+      "image": "https://i.ibb.co/Jz2gZYd/team1.jpg",
+      "quote":"https://i.ibb.co/1JnLqmr/quote.png",
+      "rating": 4.8
+    },
+    {
+      "id": 4,
+      "testimonial_text": "I've never experienced such professionalism and commitment. They are simply the best.",
+      "author": "Bob Wilson",
+      "position": "VP of Sales, GlobalTech",
+      "image": "https://i.ibb.co/Jz2gZYd/team1.jpg",
+      "quote":"https://i.ibb.co/1JnLqmr/quote.png",
+      "rating": 4.7
+    }
+  ]
+  

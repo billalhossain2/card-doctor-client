@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/Y3rD2Bc/team.png",
+      "feature_title": "Expert Team"
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/GWBw2Qk/support.png",
+      "feature_title": "24/7 Support"
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/ngVyZxK/Wrench.png",
+      "feature_title": "Best Equipment"
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/6PSQR69/gurantee.png",
+      "feature_title": "100% Guarantee"
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/zfqhpgq/timely-delivery.png",
+      "feature_title": "Timely Delivery"
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/8423kZB/delivery.png",
+      "feature_title": "Timely Delivery"
+    }
+  ]
+  

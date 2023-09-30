@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/Jz2gZYd/team1.jpg",
+      "name": "John Smith",
+      "expertise": "Master Mechanic",
+      "social_icons": {
+        "facebook": "https://i.ibb.co/3CVc5nD/facebook.png",
+        "twitter": "https://i.ibb.co/T2Pjmg5/twitter.png",
+        "linkedin": "https://i.ibb.co/1brw49F/linkedin.png",
+        "instagram": "https://i.ibb.co/njjTkH3/instagram.png"
+      }
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/ZMtj4nK/team2.jpg",
+      "name": "Emily Davis",
+      "expertise": "Auto Technician",
+      "social_icons": {
+        "facebook": "https://i.ibb.co/3CVc5nD/facebook.png",
+        "twitter": "https://i.ibb.co/T2Pjmg5/twitter.png",
+        "linkedin": "https://i.ibb.co/1brw49F/linkedin.png",
+        "instagram": "https://i.ibb.co/njjTkH3/instagram.png"
+      }
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/ky0p6c0/team3.jpg",
+      "name": "David Johnson",
+      "expertise": "Car Detailing Specialist",
+      "social_icons": {
+        "facebook": "https://i.ibb.co/3CVc5nD/facebook.png",
+        "twitter": "https://i.ibb.co/T2Pjmg5/twitter.png",
+        "linkedin": "https://i.ibb.co/1brw49F/linkedin.png",
+        "instagram": "https://i.ibb.co/njjTkH3/instagram.png"
+      }
+    }
+  ]
+  

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "icon": "https://i.ibb.co/w44rYCw/time-table.png",
+    "title": "We are open monday-friday",
+    "available_status": "7:00 am - 9:00 pm"
+  },
+  {
+    "id": 2,
+    "icon": "https://i.ibb.co/SvNckBY/phone.png",
+    "title": "Have a question?",
+    "available_status": "+2546 251 2658"
+  },
+  {
+    "id": 3,
+    "icon": "https://i.ibb.co/VB3wnZm/location.png",
+    "title": "Need a repair? our address",
+    "available_status": "Liza Street, New York"
+  }
+]
