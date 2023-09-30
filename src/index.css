@@ -7,3 +7,8 @@
 body{
     font-family: 'Inter', sans-serif;
 }
+
+.active{
+    color:#FF3811;
+    font-weight: bolder;
+}
