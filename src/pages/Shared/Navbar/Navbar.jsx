@@ -20,6 +20,7 @@ const Navbar = () => {
         <li><NavLink to="/services">Services</NavLink></li>
         <li><NavLink to="/blog">Blog</NavLink></li>
         <li><NavLink to="/contact">Contact</NavLink></li>
+        <li><NavLink to="/login">Login</NavLink></li>
         <li><button className="border-[1px] border-solid border-[#FF3811] rounded-md text-[#FF3811] px-5 py-2">Appointment</button></li>
       </ul>
       {/* mobile menu  */}
@@ -38,8 +39,9 @@ const Navbar = () => {
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/about">About</NavLink></li>
         <li><NavLink to="/services">Services</NavLink></li>
-        <li><NavLink to="blog">Blog</NavLink></li>
-        <li><NavLink to="contact">Contact</NavLink></li>
+        <li><NavLink to="/blog">Blog</NavLink></li>
+        <li><NavLink to="/contact">Contact</NavLink></li>
+        <li><NavLink to="/login">Login</NavLink></li>
         <li><button className="border-[1px] border-solid border-[#FF3811] rounded-md text-[#FF3811] px-5 py-2">Appointment</button></li>
       </ul>
       }

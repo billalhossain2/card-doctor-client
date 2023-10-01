@@ -10,7 +10,7 @@ const Testimonials = () => {
     .catch(error => console.log(error.message))
   }, [])
   return (
-    <div className='px-3 mb-32'>
+    <div className='px-3 mb-16'>
         <div className='space-y-3 text-center mb-10'>
             <p className='font-bold text-[#FF3811]'>Testimonial</p>
             <h1 className="text-5xl font-bold">What Customer Says</h1>

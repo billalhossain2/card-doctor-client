@@ -11,7 +11,7 @@ const Products = () => {
     }, [])
   return (
     <div className="mb-32 px-3">
-        <div className="space-y-3 text-center mb-3">
+        <div className="space-y-3 text-center mb-10">
         <h3 className="text-[#FF3811] font-bold">Popular Products</h3>
         <h1 className="text-5xl font-bold">Browse Our Products</h1>
         <p className="text-[#737373]">the majority have suffered alteration in some form, by injected humour, or randomised <br /> words which don't look even slightly believable. </p>
