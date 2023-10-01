@@ -1,13 +1,18 @@
 import { useParams } from "react-router-dom";
-import Banner from "./Banner";
 import serviceImg from "../../assets/images/services/2.jpg";
 import ServiceDetailsFeatureCard from "./ServiceDetailsFeatureCard";
 import Step from "./Step";
 import ServiceCardItem from "./ServiceCardItem";
 import { FaFileDownload } from "react-icons/fa";
 import { BsArrowRight } from "react-icons/bs";
+import Banner from "../Shared/Banner/Banner";
 const ServiceDetails = () => {
   const { servcieDetailsId } = useParams();
+  const bannerInfo = {
+    title:"Service Details",
+    path:"Home/Service Details",
+    img:"/none"
+  }
   const steps = [
     {
       step: "01",
@@ -27,7 +32,7 @@ const ServiceDetails = () => {
   ];
   return (
     <div className="mb-20 px-3">
-      <Banner></Banner>
+      <Banner bannerInfo={bannerInfo}></Banner>
       <div className="flex xl:flex-row flex-col gap-5">
         {/* Left Sidebar  */}
         <div className="flex-1 space-y-5">

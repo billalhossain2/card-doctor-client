@@ -5,6 +5,7 @@ import Error from "../pages/Error/Error";
 import Login from "../pages/Login/Login";
 import Signup from "../pages/Signup/Signup";
 import ServiceDetails from "../pages/serviceDetails/ServiceDetails";
+import Checkout from "../pages/Checkout/Checkout";
 const router = createBrowserRouter([
     {
       path: "/",
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
         {
           path:"service-details/:servcieDetailsId",
           element:<ServiceDetails></ServiceDetails>
+        },
+        {
+          path:"/checkout",
+          element:<Checkout></Checkout>
         }
       ]
     },

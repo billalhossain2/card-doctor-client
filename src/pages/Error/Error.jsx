@@ -5,8 +5,7 @@ const Error = () => {
   const error = useRouteError();
   return (
     <>
-    <Navbar></Navbar>
-    <div className="flex justify-center items-center flex-col space-y-3">
+    <div className="flex justify-center items-center flex-col space-y-3 mt-20">
         <div>
         <img className="w-96" src={errorImg} alt="Error Image" />
         </div>
