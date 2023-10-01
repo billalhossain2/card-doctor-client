@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
 import cardImg from "../../../assets/images/services/2.jpg"
 import { AiOutlineArrowRight } from 'react-icons/ai';
 const ServiceCard = ({service}) => {
-    const {img, title, price} = service || {}
+    const {_id, img, title, price} = service || {}
   return (
+   <Link to={`/service-details/${_id}`}>
     <div className="space-y-2 border-[1px] border-solid border-[#e4dfdf] p-5 rounded-lg cursor-pointer">
         <img className="rounded-lg" src={img} alt="service image" />
         <h3 className="text-3xl font-bold">{title}</h3>
@@ -11,6 +13,7 @@ const ServiceCard = ({service}) => {
         <AiOutlineArrowRight></AiOutlineArrowRight>
         </div>
     </div>
+   </Link>
   )
 }
 
