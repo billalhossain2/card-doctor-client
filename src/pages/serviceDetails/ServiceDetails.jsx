@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import serviceImg from "../../assets/images/services/2.jpg";
 import ServiceDetailsFeatureCard from "./ServiceDetailsFeatureCard";
 import Step from "./Step";
@@ -234,7 +234,9 @@ const ServiceDetails = () => {
 
           {/* price area  */}
           <h3 className="text-3xl font-bold my-5">Price $250.00</h3>
-          <button className="bg-[#FF3811] px-5 py-2 rounded-md text-white w-full">Proceed Checkout</button>
+          <Link to="/checkout">
+          <button className="bg-[#FF3811] px-5 py-2 rounded-md text-white w-full mt-5">Proceed Checkout</button>
+          </Link>
         </div>
       </div>
     </div>

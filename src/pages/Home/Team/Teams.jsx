@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import TeamCard from './TeamCard'
+import uid from '../../../utilities/uid'
+import useFetch from '../../../Hooks/useFetch'
 
 const Teams = () => {
-    const [members, setMembers] = useState([])
-    useEffect(()=>{
-        fetch('team-members.json')
-        .then(res => res.json())
-        .then(data => setMembers(data))
-        .catch(error => console.log(error.message))
-    }, [])
+    const members = useFetch('team-members.json')
   return (
     <div className='mb-32 px-3'>
        <div className='space-y-3 mb-16 text-center'>
@@ -18,7 +14,7 @@ const Teams = () => {
        </div>
        <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5'>
         {
-            members?.map(member => <TeamCard key={member.id} member={member}></TeamCard>)
+            members?.map(member => <TeamCard key={uid()} member={member}></TeamCard>)
         }
        </div>
     </div>

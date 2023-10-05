@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import TestimonialCard from './TestimonialCard'
+import uid from '../../../utilities/uid'
+import useFetch from '../../../Hooks/useFetch'
 
 const Testimonials = () => {
-  const [testimonials, setTestimonials] = useState([])
-  useEffect(()=>{
-    fetch('testimonials.json')
-    .then(res => res.json())
-    .then(data => setTestimonials(data))
-    .catch(error => console.log(error.message))
-  }, [])
+  const testimonials = useFetch('testimonials.json')
   return (
     <div className='px-3 mb-16'>
         <div className='space-y-3 text-center mb-10'>
@@ -18,7 +14,7 @@ const Testimonials = () => {
         </div>
         <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-5 gap-10'>
             {
-              testimonials?.map(testimonial => <TestimonialCard key={testimonial.id} testimonial={testimonial}></TestimonialCard>)
+              testimonials?.map(testimonial => <TestimonialCard key={uid()} testimonial={testimonial}></TestimonialCard>)
             }
         </div>
     </div>

@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import FeatureCard from './FeatureCard'
+import uid from '../../../utilities/uid'
+import useFetch from '../../../Hooks/useFetch'
 
 const Features = () => {
-  const [features, setFeatures] = useState([])
-  useEffect(()=>{
-    fetch('features.json')
-    .then(res => res.json())
-    .then(data => setFeatures(data))
-    .catch(error => console.log(error.message))
-  }, [])
+  const features = useFetch('features.json')
   return (
     <div className='mb-32 px-3'>
       <div className='space-y-3 text-center'>
@@ -18,7 +14,7 @@ const Features = () => {
       </div>
       <div className='grid lg:grid-cols-6 md:grid-cols-3 grid-cols-1 md:gap-5 gap-10 mt-10'>
         {
-          features?.map(feature => <FeatureCard key={feature.id} feature={feature}></FeatureCard>)
+          features?.map(feature => <FeatureCard key={uid()} feature={feature}></FeatureCard>)
         }
       </div>
     </div>

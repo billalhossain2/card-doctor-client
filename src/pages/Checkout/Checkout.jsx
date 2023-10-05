@@ -1,7 +1,9 @@
 import React from 'react'
 import Banner from '../Shared/Banner/Banner'
+import useTitle from '../../Hooks/useTitle'
 
 const Checkout = () => {
+    useTitle('Checkout - Car Doctor')
     const bannerInfo = {
         title:"Checkout",
         path:"Home/Checkout",

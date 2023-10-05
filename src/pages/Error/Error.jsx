@@ -1,7 +1,9 @@
 import { useRouteError, Link } from "react-router-dom";
 import errorImg from "../../assets/error.png";
 import Navbar from "../Shared/Navbar/Navbar";
+import useTitle from "../../Hooks/useTitle";
 const Error = () => {
+  useTitle('Error - Car Doctor')
   const error = useRouteError();
   return (
     <>

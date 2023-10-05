@@ -7,8 +7,10 @@ import Products from '../Products/Products'
 import Teams from '../Team/Teams'
 import Features from '../Features/Features'
 import Testimonials from '../Testimonials/Testimonials'
+import useTitle from '../../../Hooks/useTitle'
 
 const Home = () => {
+  useTitle('Home - Car Doctor')
   return (
     <div>
       <Banner></Banner>
