@@ -12,7 +12,7 @@ const Login = () => {
   const from = useLocation()?.state?.from;
   const navigate = useNavigate()
   console.log(from)
-  const {user, loginUserWithEmailAndPassword, sendUserPwdResetEmail} = useContext(userContext)
+  const {loginUserWithEmailAndPassword, sendUserPwdResetEmail} = useContext(userContext)
   const [error, setError] = useState("")
   const [success, setSuccess] = useState("")
   const [formData, setFormData] = useState({email:"", password:""})
@@ -31,7 +31,7 @@ const Login = () => {
     }
 
     loginUserWithEmailAndPassword(email, password)
-    .then(userCredential => {
+    .then(() => {
       setSuccess("Successfully logged in")
       navigate(from)
       form.reset()
@@ -42,7 +42,7 @@ const Login = () => {
   }
 
   const handleResetPassword = (e)=>{
-    const {email, password} = formData;
+    const {email} = formData;
     if(!email){
       return Swal.fire("Please enter your email!")
      }

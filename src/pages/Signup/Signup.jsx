@@ -11,7 +11,7 @@ import { sendEmailVerification } from "firebase/auth";
 
 const Signup = () => {
   useTitle("Signup - Car Doctor");
-  const { user, signUpUser, updateUserProfile } = useContext(userContext);
+  const { signUpUser, updateUserProfile } = useContext(userContext);
   const [error, setError] = useState("")
   const [success, setSucccess] = useState("")
 
@@ -32,7 +32,6 @@ const Signup = () => {
     e.preventDefault()
     setError("")
     setSucccess("")
-    const form = e.target;
     const {name, photoUrl, email, password, confirmPassword, checked} = formData;
     console.log(name, photoUrl, email, password, confirmPassword, checked)
     //validate empty fields

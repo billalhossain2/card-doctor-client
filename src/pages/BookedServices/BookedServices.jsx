@@ -7,22 +7,40 @@ import useTitle from '../../Hooks/useTitle';
 import BookedRow from './BookedRow';
 import { userContext } from '../../Providers/AuthProvider';
 import Swal from 'sweetalert2';
+import { useNavigate } from 'react-router-dom';
 const BookedServices = () => {
     useTitle("Booked Services - Car Doctor")
+    const navigate = useNavigate()
     const bannerInfo = {
         title: "Booked Services",
         path: "Home/Booked Services",
         img: "/none",
       };
+
+
       const {user} = useContext(userContext);
       const [bookedServices, setBookedServices] = useState([])
+
+
       useEffect(()=>{
-        console.log('loging........')
-        fetch(`http://localhost:9000/bookings/?email=${user?.email}`)
+        fetch(`http://localhost:9000/bookings/?email=${user?.email}`, {
+          method:"GET",
+          credentials:"include"
+        })
         .then(res => res.json())
-        .then(data => setBookedServices(data))
+        .then(data => {
+          if(Array.isArray(data)){
+            setBookedServices(data)
+          }else{
+            if(data.code === 401 || data.code === 403){
+              navigate("/login")
+            }
+          }
+        })
         .catch(error => console.log(error.message))
       }, [user])
+
+
 
     //   delete from bookings 
     const handleDelete = (id)=>{
